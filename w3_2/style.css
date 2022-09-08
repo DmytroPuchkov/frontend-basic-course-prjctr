@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.program__into {
+  padding: 150px 0 100px;
+  min-height: 574px;
+  background-image: url('./img/img-program.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.program__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.program__heading {
+  max-width: 460px;
+}
+
+.program__flow {
+  
+}
+
+.program__item {
+  
+}
