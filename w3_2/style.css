@@ -10,6 +10,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #000000;
+  line-height: 1.5;
 }
 
 h2 {
@@ -27,7 +28,7 @@ h2 {
   padding: 0 10px;
 }
 
-.program__into {
+.program__intro {
   padding: 150px 0 100px;
   min-height: 574px;
   background-image: url('./img/img-program.jpg');
@@ -38,7 +39,6 @@ h2 {
 .program__title {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -50,9 +50,60 @@ h2 {
 }
 
 .program__flow {
-  
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .program__item {
-  
+  width: 25%;
+  height: 445px;
+  padding: 50px;
+  position: relative;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  transition: all .4s;
+}
+
+.program__item:hover {
+  background-color: #0536FC;
+}
+
+.program__item-number {
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.program__item-heading {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.program__item-description {
+  letter-spacing: -0.03em;
+  opacity: 0.6;
+  max-width: 200px;
+}
+
+.program__item-direction {
+  width: 100px;
+  height: 100px;
+  padding: 35px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #FFFFFF;
+}
+
+.program__item-link {
+  text-decoration: none;
+}
+
+.program__item-img {
+  width: 30px;
+  height: 30px;
 }
