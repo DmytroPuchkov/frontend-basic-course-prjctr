@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Quattrocento', serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header__nav {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.header__nav a:first-child {
+  float: left;
+}
+
+.header__nav a:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-right: 100px;
+}
+
+.header__nav-link:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 16px;
+}
+
+.hero {
+  min-height: 805px;
+  background-image: url('./img/hero-img.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+.hero__heading {
+  font-size: 96px;
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 280px;
+}
+
+.hero__thesis {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  opacity: 0.9;
+
+  position: absolute;
+  left: 10%;
+  top: 21%;
+}
+
+.hero__title {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  opacity: 0.9;
+
+  position: absolute;
+  left: 51%;
+  top: 56%;
+}
+
+.hero__photo {
+  position: absolute;
+  max-width: 640px;
+  max-height: 354px;
+  left: 27.8%;
+  top: 70%;
+}
