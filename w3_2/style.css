@@ -68,6 +68,14 @@ h2 {
   background-color: #0536FC;
 }
 
+.program__item:hover p {
+  color: #FFFFFF;
+}
+
+.program__item:hover h3 {
+  color: #FFFFFF;
+}
+
 .program__item-number {
   font-weight: 300;
   letter-spacing: -0.03em;
