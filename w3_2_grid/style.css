@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.program__intro {
+  padding: 150px 0;
+  min-height: 574px;
+  background-image: url('./img/img-program.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.program__intro-title {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.program__intro-heading {
+  max-width: 460px;
+}
+
+.program__flow {
+  display: grid;
+  column-gap: 1px;
+  grid-template-columns: repeat(4, calc(25% - 1px));
+  background-color: #d9d9d9;
+}
+
+.program__item {
+  height: 445px;
+  padding: 50px;
+  position: relative;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  transition: all .4s;
+}
+
+.program__item-number {
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.program__item-heading {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  white-space: nowrap;
+}
+
+.program__item-description {
+  letter-spacing: -0.03em;
+  opacity: 0.6;
+  max-width: 200px;
+}
+
+.program__item-direction {
+  width: 100px;
+  height: 100px;
+  padding: 35px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #FFFFFF;
+}
+
+.program__item-link {
+  text-decoration: none;
+}
+
+.program__item-img {
+  width: 30px;
+  height: 30px;
+}
+
+.program__item:hover {
+  background-color: #0536FC;
+}
+
+.program__item:hover p {
+  color: #FFFFFF;
+}
+
+.program__item:hover h3 {
+  color: #FFFFFF;
+}
+
+/* Media query*/
+
+@media all and (max-width: 1132px) {
+  .program__flow {
+    grid-template-columns: repeat(2, calc(50% - 1px));
+    row-gap: 1px;
+  }
+
+  .program__item-description {
+    max-width: 400px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .program__intro {
+    padding: 80px 0;
+    min-height: 374px;
+  }
+
+  .program__flow {
+    grid-template-columns: 1fr;
+  }
+  
+  .program__item {
+    height: 345px;
+  }
+
+  .program__item-heading {
+    margin-bottom: 32px;
+  }
+}
