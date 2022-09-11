@@ -71,6 +71,7 @@ h2 {
 
 .header__logo span {
   padding-left: 50px;
+  padding-right: 24px;
 }
 
 .slogan {
@@ -124,6 +125,7 @@ h2 {
 .program__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .program__left {
@@ -143,8 +145,8 @@ h2 {
 }
 
 .program__image {
-  width: 720px;
-  height: 748px;
+  width: 100%;
+  height: auto;
 }
 
 .title {
