@@ -8,6 +8,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  font-size: 16px;
 }
 
 h2 {
@@ -35,10 +36,10 @@ h2 {
 }
 
 .about__left-title {
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 21px;
   opacity: 0.55;
-  padding-left: 15%;
 }
 
 .about__left-heading {
@@ -53,18 +54,20 @@ h2 {
   color: #71870E;
 }
 
+.highlight-bold {
+  font-weight: 700;
+}
+
 .about__left-description {
-  font-size: 16px;
   line-height: 28px;
   opacity: 0.85;
-  max-width: 560px;
+  max-width: 580px;
   margin-bottom: 40px;
   padding-left: 30%;
 }
 
 .about__left-btn {
   text-decoration: none;
-  font-size: 16px;
   line-height: 24px;
   color: #CD9A3D;
   padding-left: 30%;
@@ -90,12 +93,13 @@ h2 {
 
 .about__right {
   position: relative;
+  display: flex;
 }
 
 .image-second {
   display: flex;
   position: absolute;
-  right: 0;
+  right: 60px;
   bottom: 100px;
 }
 
@@ -128,6 +132,14 @@ h2 {
   
   .about__left-btn {
     padding-left: 20%;
+  }
+
+  .about__right {
+    justify-content: flex-end;
+  }
+
+  .image-second {
+    right: 0;
   }
 }
 
