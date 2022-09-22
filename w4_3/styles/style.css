@@ -200,7 +200,7 @@ a {
 .fourth {
   display: flex;
   flex-wrap: wrap;
-  padding: 10% 0;
+  padding: 10% 0 5%;
 }
 
 .fourth__left {
@@ -237,7 +237,7 @@ a {
 }
 
 .fifth {
-  padding: 24px 0;
+  padding: 24px 0 80px;
 }
 
 .fifth__inner {
@@ -386,5 +386,9 @@ a {
 
   .fifth__inner {
     gap: 48px;
+  }
+
+  .fourth__right-heading {
+    margin-bottom: 40px;
   }
 }
