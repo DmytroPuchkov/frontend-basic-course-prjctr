@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Ogg';
+  src:
+    url('../fonts/OggLight.woff2') format('woff2'),
+    url('../fonts/OggLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src:
+    url('../fonts/OggMediumItalic.woff2') format('woff2'),
+    url('../fonts/OggMediumItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'TradeGothic LT Extended';
+  src:
+    url('../fonts/Trade Gothic LT Extended.woff2') format('woff2'),
+    url('../fonts/Trade Gothic LT Extended.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  font-family: 'TradeGothic LT Extended';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #000000;
+}
+
+h2 {
+  font-family: 'Ogg';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1.07;
+  color: #000000;
+}
+
+.send-email {
+  padding: 100px 0;
+}
+
+.send-email__inner {
+  padding-left: 32%;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  left: 20%;
+  top: 1%;
+}
+
+.send-email__description {
+  padding-bottom: 100px;
+}
+
+.send-email__description {
+  max-width: 600px;
+}
+
+.send-email__description-heading {
+  margin-bottom: 100px;
+}
+
+.send-email__form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 600px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.select {
+  display: block;
+  font-family: 'TradeGothic LT Extended';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #e3e3e3;
+  width: 100%;
+  appearance: none;
+  background-image: url('./images/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 15px auto, 100%;
+}
+
+.title {
+  line-height: 1.75;
+  opacity: 0.55;
+}
+
+.thesis {
+  line-height: 1.75;
+  color: #71870E;
+  opacity: 0.85;
+  max-width: 420px;
+  float: right;
+}
+
+.highlight-heading {
+  font-style: italic;
+  font-weight: 400;
+}
+
+input,
+textarea,
+select {
+  margin: 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 8px 0;
+}
+
+textarea {
+  padding: 16px 0;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  font-family: 'TradeGothic LT Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e3e3e3;
+}
+
+label {
+  font-family: 'Ogg';
+  font-style: normal;
+  font-weight: 300;
+}
+
+.checkbox__label {
+  padding-left: 8px;
+}
+
+.button {
+  border: none;
+  background-color: #ffffff;
+  font-family: 'TradeGothic LT Extended';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #D0A049;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1044px) {
+  .title {
+    display: none;
+  }
+
+  .send-email__inner {
+    padding-left: 16%;
+  }
+
+  .send-email {
+    padding: 64px 0;
+  }
+
+  .send-email__description-heading {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .title {
+    display: none;
+  }
+
+  .send-email__inner {
+    padding-left: 0;
+  }
+
+  .send-email {
+    padding: 40px 0;
+  }
+
+  .send-email__description-heading {
+    margin-bottom: 32px;
+  }
+}

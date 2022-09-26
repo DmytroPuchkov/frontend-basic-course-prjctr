@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="send-email">
+    <div class="container">
+      <div class="send-email__inner">
+        <div class="send-email__description">
+          <p class="title">
+            (Booking)
+          </p>
+          <h2 class="send-email__description-heading">
+            Send <span class="highlight-heading">an email</span>
+          </h2>
+          <p class="thesis">
+            If you have a general or project enquiry, please drop me an email — available now
+          </p>
+        </div>
+        <form class="send-email__form" action="thank_you_page.html" method="get">
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="input" type="email" name="email" id="email" placeholder="Your email" required>
+          </div>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="1" placeholder="Start typing here"></textarea>
+          </div>
+          <div>
+            <label for="select">Project type</label>
+            <select class="field select" id="select">
+              <option value="0">Chose</option>
+              <option value="1">Reserve for personal event</option>
+              <option value="2">Buy tickets for a next concert</option>
+              <option value="3">Reserve from a venue</option>
+              <option value="4">Other</option>
+            </select>
+          </div>
+          <div>
+            <input type="checkbox" name="agree" id="agree">
+            <label class="checkbox__label" for="agree">I agree to receive ocasional newsletter with latest news and
+              updates</label>
+          </div>
+          <button class="button" type="submit">
+            <img src="./images/line.svg" alt="line">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
