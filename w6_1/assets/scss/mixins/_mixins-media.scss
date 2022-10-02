@@ -1,0 +1,14 @@
+@use "../presets" as *;
+$diff: 0.2px;
+
+@mixin sm {
+  @media (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: $xs) {
+    @content;
+  }
+}

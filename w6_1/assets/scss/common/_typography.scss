@@ -1,0 +1,44 @@
+@use "../presets" as *;
+@use "../mixins/" as *;
+
+body {
+  font-family: 'Basis Grotesque Pro';
+  color: $color-text-main;
+  line-height: $line-height-main;
+  font-size: $font-size-main;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+}
+
+.intro__title {
+  font-weight: 700;
+  font-size: $font-size-main;
+  line-height: $line-height-main;
+  text-transform: uppercase;
+  color: $color-text-highlight;
+  opacity: 0.9;
+  margin-bottom: 30px;
+
+  @include xs {
+    margin-bottom: 16px;
+  }
+}
+
+.intro__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  max-width: 500px;
+
+  @include xs {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+.intro__thesis {
+  font-weight: 300;
+  opacity: 0.35;
+}
