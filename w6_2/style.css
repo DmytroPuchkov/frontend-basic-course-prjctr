@@ -1,0 +1,40 @@
+:root {
+  --bs-link-color: #0536FC;
+  --bs-primary-rgb: 5, 54, 252;
+}
+
+h1, h3 {
+  font-weight: 700;
+}
+
+p {
+  max-width: 325px;
+}
+
+.nav-pills .nav-link.active {
+  border-radius: 0;
+  background-color: #0536FC;
+}
+
+.btn-primary {
+  background-color: #0536FC;
+}
+
+.my-br-0 {
+  border-radius: 0;
+}
+
+.my-about {
+  position: relative;
+}
+
+.my-about-content {
+  position: absolute;
+  width: 719px;
+  height: 683px;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+  padding: 8%;
+}
+
