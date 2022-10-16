@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Інвестувати</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__left">
+          <div class="header__logo">
+            <img class="header__logo-img" src="./img/header/medium-logo.png" alt="logo">
+            <span class="slogan">Програма для змін у країні</span>
+          </div>
+          <nav class="header__nav">
+            <a class="header__nav-link" href="#">школам</a>
+            <a class="header__nav-link" href="#">партнерам</a>
+          </nav>
+        </div>
+        <div class="header__right">
+          <nav class="header__nav">
+            <a class="header__nav-link" href="#">про нас</a>
+            <a class="header__nav-link" href="#">історії</a>
+            <a class="header__nav-link" href="#">підтримка</a>
+          </nav>
+          <div class="header__menu">
+            <a class="header__nav-link" href="#">меню</a>
+          </div>
+          <div>
+            <a class="header__nav-link header__nav-link--language" href="#">УКР</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="partners">
+      <div class="container">
+        <div class="intro">
+          <h3 class="intro__title">
+            партнерам
+          </h3>
+          <h1 class="intro__heading intro__heading--partners">
+            залучись —&nbsp;будь нашим партнером
+          </h1>
+          <p class="description">
+            Будь спонсором, зроби зміни в країні можливими.
+          </p>
+          <img class="intro__icon" src="./img/icon-arrow.svg" alt="arrow">
+        </div>
+      </div>
+    </section>
+
+    <div class="switches">
+      <form class="type__form" action="type.html" method="get">
+        <div class="switches__btn">
+          <input class="form__input form__input--hidden" type="radio" name="whom" id="partners" checked>
+          <label class="form__label form__label--btn" for="partners">
+            партнерам
+          </label>
+          <input class="form__input form__input--hidden" type="radio" name="whom" id="invest">
+          <label class="form__label form__label--btn" for="invest">
+            інвестувати
+          </label>
+        </div>
+      </form>
+    </div>
+
+    <section class="investments">
+      <div class="container">
+        <div class="investments__inner">
+          <div class="intro">
+            <h3 class="intro__title">
+              інвестиції
+            </h3>
+            <h2 class="intro__heading">
+              зробити <br>— інвестиції у програму
+            </h2>
+          </div>
+          <div class="investments__title">
+            виберіть спосіб оплати
+          </div>
+          <form class="investments__form" action="investments.html" method="get">
+            <div class="investments__form-payment">
+              <input class="form__input-radio" type="radio" name="method" id="card" checked>
+              <label class="form__label-radio" for="card">
+                Банківська карта
+              </label>
+              <input class="form__input-radio" type="radio" name="method" id="paypal">
+              <label class="form__label-radio" for="paypal">
+                PayPal
+              </label>
+              <input class="form__input-radio" type="radio" name="method" id="receipt">
+              <label class="form__label-radio" for="receipt">
+                Банківська платіжна квитанція
+              </label>
+            </div>
+            <div>
+              <div class="investments__form-title">
+                банківська карта
+              </div>
+              <div class="investments__form-summ">
+                <input class="form__input form__input--hidden" type="radio" name="summ" id="50000" checked>
+                <label class="form__label form__label--btn" for="50000">
+                  50 000
+                </label>
+                <input class="form__input form__input--hidden" type="radio" name="summ" id="30000">
+                <label class="form__label form__label--btn" for="30000">
+                  30 000
+                </label>
+                <input class="form__input form__input--hidden" type="radio" name="summ" id="10000">
+                <label class="form__label form__label--btn" for="10000">
+                  10 000
+                </label>
+                <input class="form__input form__input--hidden" type="radio" name="summ" id="1000">
+                <label class="form__label form__label--btn" for="1000">
+                  1 000
+                </label>
+              </div>
+              <input class="investments__form-input" type="text" placeholder="Інша сумма">
+              <div class="investments__form-period">
+                <input class="form__input-radio" type="radio" name="period" id="monthly" checked>
+                <label class="form__label-radio" for="monthly">
+                  Щомісячно
+                </label>
+                <input class="form__input-radio" type="radio" name="period" id="onetime">
+                <label class="form__label-radio" for="onetime">
+                  Одноразово
+                </label>
+              </div>
+            </div>
+            <div class="investments__form-fields">
+              <div class="form__field">
+                <label class="form__label form__label--input" for="name">Ім’я</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Напишіть ваше ім’я">
+              </div>
+              <div class="form__field">
+                <label class="form__label form__label--input" for="mail">Email</label>
+                <input class="form__input" type="email" name="mail" id="mail"
+                  placeholder="Напишіть вашу електронну адресу">
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" name="offer" id="offer" required>
+                <label class="label__checkbox" for="offer">
+                  Я приймаю <a href="#">Договір оферти</a>
+                </label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" name="agreement" id="agreement" required>
+                <label class="label__checkbox" for="agreement">
+                  Я приймаю <a href="#">Угоду про використання персональних даних</a>
+                </label>
+              </div>
+              <button class="button">Відправити</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
